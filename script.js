@@ -1,5 +1,11 @@
 function firstChar(text) {
-	return text.charAt(1)
+	let counter = 0;
+	while(counter<text.length && text[counter]===" "){
+			counter++;
+		}
+		return text[counter] || "";
+		
+	}
 }
 
 const text = prompt("Enter text:");
